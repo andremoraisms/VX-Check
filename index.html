@@ -15,17 +15,13 @@
 </head>
 <body>
 
-<!-- SHELL MOBILE: ocupa toda a tela, sem scroll externo -->
-<div class="app-shell">
+<div class="page">
 
-  <!-- HEADER fixo no topo -->
   <header class="header">
     <div class="header-logo">VTX <span>Check</span> Web</div>
     <div class="header-sub">Extrator de dados de dispositivo</div>
   </header>
 
-  <!-- ÁREA COM SCROLL — cresce/encolhe conforme a tela -->
-  <main class="scroll-area">
   <div class="container">
 
     <!-- DROP ZONE -->
@@ -37,6 +33,12 @@
       <img id="imagePreview" alt="Pré-visualização">
     </div>
     <input type="file" id="imageInput" accept="image/*">
+
+    <!-- BOTÕES -->
+    <div class="btn-row">
+      <button class="btn btn-upload" id="btnUpload">📁 Escolher / Foto</button>
+      <button class="btn btn-extract" id="btnCapturar" disabled>🪄 Extrair</button>
+    </div>
 
     <!-- STATUS -->
     <div class="status-bar" id="statusBar">
@@ -73,14 +75,6 @@ IMEI 2: {IMEI 2}</textarea>
     </div>
 
   </div>
-  </main>
-
-  <!-- BOTÕES fixos no rodapé -->
-  <footer class="footer-actions">
-    <button class="btn btn-upload" id="btnUpload">📁 Escolher / Fotografar</button>
-    <button class="btn btn-extract" id="btnCapturar" disabled>🪄 Extrair e Copiar</button>
-  </footer>
-
 </div>
 
 <script src="script.js"></script>
